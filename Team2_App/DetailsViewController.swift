@@ -11,7 +11,7 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Charan Hello")
+       
         // Call a function to load and display user details
         loadUserDetails()
     }

@@ -21,6 +21,9 @@ class LoginViewController: UIViewController {
                UIApplication.shared.keyWindow?.rootViewController = tabBarController
            }
        }
+    @IBAction func FButtonTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "forgot", sender: self)
+    }
     
     
     @IBAction func loginButtonTapped(_ sender: UIButton) {

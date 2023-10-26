@@ -6,24 +6,31 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ForgotViewController: UIViewController {
+    @IBOutlet weak var emailLabel: UITextField!
+    
+    @IBAction func RButtonTapped(_ sender: UIButton) {
+        if let email = emailLabel.text {
+            Auth.auth().sendPasswordReset(withEmail: email) { error in
+                if let error = error {
+                    // Handle the error (e.g., display an alert with the error message)
+                    let alert = UIAlertController(title: "Password Reset Failed", message: error.localizedDescription, preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                    alert.addAction(okAction)
+                    self.present(alert, animated: true, completion: nil)
+                } else {
+                    // Password reset email sent successfully
+                    let alert = UIAlertController(title: "Email Sent", message: "A password reset email has been sent to your email address.", preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                    alert.addAction(okAction)
+                    self.present(alert, animated: true, completion: nil)
+                }
+            }
+        }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
