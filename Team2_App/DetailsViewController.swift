@@ -11,7 +11,7 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
         // Call a function to load and display user details
         loadUserDetails()
     }
@@ -22,6 +22,21 @@ class DetailViewController: UIViewController {
         loadUserDetails()
     }
     
+    @IBAction func SoutButtonTapped(_ sender: UIButton) {
+        do {
+            try Auth.auth().signOut()
+            // Sign out was successful
+            // You can also navigate the user back to the login screen or perform other actions
+            if let authViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") {
+                authViewController.modalPresentationStyle = .fullScreen
+                self.present(authViewController, animated: true, completion: nil)
+            }
+        } catch let error as NSError {
+            // Handle any sign-out errors
+            print("Sign Out Error: \(error.localizedDescription)")
+        }
+        
+    }
     func loadUserDetails() {
         if let user = Auth.auth().currentUser {
             // Access the UID of the currently signed-in user

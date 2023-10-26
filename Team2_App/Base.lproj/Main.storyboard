@@ -151,7 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oaI-ht-PLP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-27" y="-685"/>
+            <point key="canvasLocation" x="-141" y="-849"/>
         </scene>
         <!--Packages-->
         <scene sceneID="T3a-jV-O6R">
@@ -282,6 +282,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSa-LL-foH">
+                                <rect key="frame" x="152" y="682" width="90" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign Out"/>
+                                <connections>
+                                    <action selector="SoutButtonTapped:" destination="vP2-1I-JRB" eventType="touchUpInside" id="7qh-Ub-C0r"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4sR-Fj-2vn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
