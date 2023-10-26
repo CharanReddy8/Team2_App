@@ -19,19 +19,6 @@ class AuthViewController: UIViewController {
         super.viewDidLoad()
     }
 
-//    @IBAction func signUpButtonTapped(_ sender: UIButton) {
-//        guard let email = emailTextField.text, let password = passwordTextField.text else {
-//            return
-//        }
-//
-//        Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
-//            if error != nil {
-//                // Handle the error (e.g., display an alert)
-//            } else {
-//                // User signed up successfully
-//            }
-//        }
-//    }
     @IBAction func LoginButtonTapped(_ sender: UIButton) {
         if let authViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") {
             authViewController.modalPresentationStyle = .fullScreen
