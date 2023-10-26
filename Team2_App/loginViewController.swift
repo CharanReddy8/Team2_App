@@ -8,6 +8,21 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func signUpButtonTapped(_ sender: UIButton) {
+        if let authViewController = self.storyboard?.instantiateViewController(withIdentifier: "AuthViewController") {
+            authViewController.modalPresentationStyle = .fullScreen
+            self.present(authViewController, animated: true, completion: nil)
+        }
+    }
+    
+    func switchToTabBarController() {
+           if let tabBarController = storyboard?.instantiateViewController(withIdentifier: "YourTabBarControllerIdentifier") as? UITabBarController {
+               UIApplication.shared.keyWindow?.rootViewController = tabBarController
+           }
+       }
+    
+    
     @IBAction func loginButtonTapped(_ sender: UIButton) {
         guard let email = email.text, let password = password.text else {
             return
@@ -25,6 +40,7 @@ class LoginViewController: UIViewController {
                 let successAlert = UIAlertController(title: "Login Successful", message: "You have successfully logged in.", preferredStyle: .alert)
                 let okAction = UIAlertAction(title: "OK", style: .default, handler: { (action) in
                     // You can perform any additional actions upon successful login
+                    self.switchToTabBarController()
                 })
                 successAlert.addAction(okAction)
                 self.present(successAlert, animated: true, completion: nil)

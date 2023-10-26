@@ -42,10 +42,10 @@
 		5B237E3D2AEAB56A00DF08CE /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5B237E3C2AEAB56A00DF08CE /* FirebaseStorage */; };
 		5B237E3F2AEAB56A00DF08CE /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 5B237E3E2AEAB56A00DF08CE /* FirebaseStorageCombine-Community */; };
 		5B237E422AEABC1C00DF08CE /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B237E412AEABC1C00DF08CE /* loginViewController.swift */; };
+		5B72ADD92AEAE2E30022EFE4 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B72ADD82AEAE2E30022EFE4 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5B05AFA12AEA1FBE00C646F0 /* Team2_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Team2_App.app; path = "/Users/charan_reddy/Desktop/Ubqitous Computing/Team2_App/build/Debug-iphoneos/Team2_App.app"; sourceTree = "<absolute>"; };
 		5B05AFA42AEA1FBE00C646F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B05AFA62AEA1FBE00C646F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5B05AFA82AEA1FBE00C646F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +55,8 @@
 		5B05AFB22AEA1FBF00C646F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B237E072AEAB4B400DF08CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5B237E412AEABC1C00DF08CE /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		5B72ADD62AEAD6560022EFE4 /* Team2_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Team2_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B72ADD82AEAE2E30022EFE4 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				5B05AFA32AEA1FBE00C646F0 /* Team2_App */,
+				5B72ADD62AEAD6560022EFE4 /* Team2_App.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +114,7 @@
 				5B05AFA82AEA1FBE00C646F0 /* ViewController.swift */,
 				5B237E412AEABC1C00DF08CE /* loginViewController.swift */,
 				5B05AFAA2AEA1FBE00C646F0 /* Main.storyboard */,
+				5B72ADD82AEAE2E30022EFE4 /* DetailsViewController.swift */,
 				5B05AFAD2AEA1FBF00C646F0 /* Assets.xcassets */,
 				5B05AFAF2AEA1FBF00C646F0 /* LaunchScreen.storyboard */,
 				5B05AFB22AEA1FBF00C646F0 /* Info.plist */,
@@ -164,7 +168,7 @@
 				5B237E3E2AEAB56A00DF08CE /* FirebaseStorageCombine-Community */,
 			);
 			productName = Team2_App;
-			productReference = 5B05AFA12AEA1FBE00C646F0 /* Team2_App.app */;
+			productReference = 5B72ADD62AEAD6560022EFE4 /* Team2_App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -226,6 +230,7 @@
 				5B05AFA92AEA1FBE00C646F0 /* ViewController.swift in Sources */,
 				5B05AFA52AEA1FBE00C646F0 /* AppDelegate.swift in Sources */,
 				5B05AFA72AEA1FBE00C646F0 /* SceneDelegate.swift in Sources */,
+				5B72ADD92AEAE2E30022EFE4 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
