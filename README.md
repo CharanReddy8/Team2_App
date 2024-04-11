@@ -22,10 +22,6 @@ EasyTravel believes in making travel accessible and enjoyable for everyone. Our 
 
 First-time users can use the sign-up page to create an account with us. If you're already a user, simply sign in to access the features of the app.
 
-For Evaluation, You can use credentials 
-Username: vaishukosanasv@gmail.com
-Password: Vaishu@24
-
 ## Dependencies
 
 1. Ensure you have Xcode installed on your system.
