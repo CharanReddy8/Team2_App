@@ -13,6 +13,17 @@
 		5B05AFAC2AEA1FBE00C646F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B05AFAA2AEA1FBE00C646F0 /* Main.storyboard */; };
 		5B05AFAE2AEA1FBF00C646F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B05AFAD2AEA1FBF00C646F0 /* Assets.xcassets */; };
 		5B05AFB12AEA1FBF00C646F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B05AFAF2AEA1FBF00C646F0 /* LaunchScreen.storyboard */; };
+		5B12F0422AF041ED0098DECF /* TripPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12F0392AF041ED0098DECF /* TripPlanViewController.swift */; };
+		5B12F0432AF041ED0098DECF /* PaymentSucessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12F03A2AF041ED0098DECF /* PaymentSucessViewController.swift */; };
+		5B12F0442AF041ED0098DECF /* FViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12F03B2AF041ED0098DECF /* FViewController.swift */; };
+		5B12F0452AF041ED0098DECF /* passViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12F03C2AF041ED0098DECF /* passViewController.swift */; };
+		5B12F0462AF041ED0098DECF /* PaymentDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12F03D2AF041ED0098DECF /* PaymentDetails.swift */; };
+		5B12F0472AF041ED0098DECF /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12F03E2AF041ED0098DECF /* CustomCell.swift */; };
+		5B12F0482AF041ED0098DECF /* DetailsReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12F03F2AF041ED0098DECF /* DetailsReviewViewController.swift */; };
+		5B12F0492AF041ED0098DECF /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12F0402AF041ED0098DECF /* ActivityTableViewCell.swift */; };
+		5B12F04A2AF041ED0098DECF /* SViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12F0412AF041ED0098DECF /* SViewController.swift */; };
+		5B12F0722AF1AE670098DECF /* MyBookingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12F0712AF1AE670098DECF /* MyBookingsViewController.swift */; };
+		5B12F0742AF1B0140098DECF /* BookingCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12F0732AF1B0140098DECF /* BookingCells.swift */; };
 		5B237E082AEAB4B400DF08CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B237E072AEAB4B400DF08CE /* GoogleService-Info.plist */; };
 		5B237E0B2AEAB56A00DF08CE /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5B237E0A2AEAB56A00DF08CE /* FirebaseAnalytics */; };
 		5B237E0D2AEAB56A00DF08CE /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 5B237E0C2AEAB56A00DF08CE /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -43,7 +54,12 @@
 		5B237E3F2AEAB56A00DF08CE /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 5B237E3E2AEAB56A00DF08CE /* FirebaseStorageCombine-Community */; };
 		5B237E422AEABC1C00DF08CE /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B237E412AEABC1C00DF08CE /* loginViewController.swift */; };
 		5B72ADD92AEAE2E30022EFE4 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B72ADD82AEAE2E30022EFE4 /* DetailsViewController.swift */; };
+		5B7538912B16B47A00819A58 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7538902B16B47A00819A58 /* ChatViewController.swift */; };
+		5BE00BF22B1330290095210C /* BookingDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE00BF12B1330290095210C /* BookingDetailsViewController.swift */; };
 		5BFED1BB2AEAF794001816E9 /* ForgotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFED1BA2AEAF794001816E9 /* ForgotViewController.swift */; };
+		5EC541C82B17117B004AA034 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC541C72B171176004AA034 /* ContentView.swift */; };
+		5EC541CA2B1711E0004AA034 /* ChatTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC541C92B1711DD004AA034 /* ChatTestApp.swift */; };
+		5EC541CC2B171218004AA034 /* BotResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC541CB2B171215004AA034 /* BotResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,11 +70,27 @@
 		5B05AFAD2AEA1FBF00C646F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B05AFB02AEA1FBF00C646F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B05AFB22AEA1FBF00C646F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B12F0392AF041ED0098DECF /* TripPlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripPlanViewController.swift; sourceTree = "<group>"; };
+		5B12F03A2AF041ED0098DECF /* PaymentSucessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentSucessViewController.swift; sourceTree = "<group>"; };
+		5B12F03B2AF041ED0098DECF /* FViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FViewController.swift; sourceTree = "<group>"; };
+		5B12F03C2AF041ED0098DECF /* passViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = passViewController.swift; sourceTree = "<group>"; };
+		5B12F03D2AF041ED0098DECF /* PaymentDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentDetails.swift; sourceTree = "<group>"; };
+		5B12F03E2AF041ED0098DECF /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		5B12F03F2AF041ED0098DECF /* DetailsReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsReviewViewController.swift; sourceTree = "<group>"; };
+		5B12F0402AF041ED0098DECF /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
+		5B12F0412AF041ED0098DECF /* SViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SViewController.swift; sourceTree = "<group>"; };
+		5B12F0712AF1AE670098DECF /* MyBookingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBookingsViewController.swift; sourceTree = "<group>"; };
+		5B12F0732AF1B0140098DECF /* BookingCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingCells.swift; sourceTree = "<group>"; };
 		5B237E072AEAB4B400DF08CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5B237E412AEABC1C00DF08CE /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		5B72ADD62AEAD6560022EFE4 /* Team2_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Team2_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B72ADD82AEAE2E30022EFE4 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		5B7538902B16B47A00819A58 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		5BE00BF12B1330290095210C /* BookingDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDetailsViewController.swift; sourceTree = "<group>"; };
 		5BFED1BA2AEAF794001816E9 /* ForgotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewController.swift; sourceTree = "<group>"; };
+		5EC541C72B171176004AA034 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5EC541C92B1711DD004AA034 /* ChatTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTestApp.swift; sourceTree = "<group>"; };
+		5EC541CB2B171215004AA034 /* BotResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,19 +142,75 @@
 		5B05AFA32AEA1FBE00C646F0 /* Team2_App */ = {
 			isa = PBXGroup;
 			children = (
+				5E5C7CDA2B17E34000E5B086 /* Bot */,
+				5B75386E2B1463F800819A58 /* My profile */,
+				5B75386D2B14639100819A58 /* Login,Signup,Fpassword */,
+				5B75386C2B14634100819A58 /* Bookings Tab */,
+				5B75386F2B14644A00819A58 /* Packages Tab */,
 				5B05AFA42AEA1FBE00C646F0 /* AppDelegate.swift */,
 				5B05AFA62AEA1FBE00C646F0 /* SceneDelegate.swift */,
 				5B237E072AEAB4B400DF08CE /* GoogleService-Info.plist */,
-				5B05AFA82AEA1FBE00C646F0 /* ViewController.swift */,
-				5B237E412AEABC1C00DF08CE /* loginViewController.swift */,
 				5B05AFAA2AEA1FBE00C646F0 /* Main.storyboard */,
-				5BFED1BA2AEAF794001816E9 /* ForgotViewController.swift */,
-				5B72ADD82AEAE2E30022EFE4 /* DetailsViewController.swift */,
 				5B05AFAD2AEA1FBF00C646F0 /* Assets.xcassets */,
 				5B05AFAF2AEA1FBF00C646F0 /* LaunchScreen.storyboard */,
 				5B05AFB22AEA1FBF00C646F0 /* Info.plist */,
 			);
 			path = Team2_App;
+			sourceTree = "<group>";
+		};
+		5B75386C2B14634100819A58 /* Bookings Tab */ = {
+			isa = PBXGroup;
+			children = (
+				5B12F0732AF1B0140098DECF /* BookingCells.swift */,
+				5BE00BF12B1330290095210C /* BookingDetailsViewController.swift */,
+				5B12F0712AF1AE670098DECF /* MyBookingsViewController.swift */,
+			);
+			path = "Bookings Tab";
+			sourceTree = "<group>";
+		};
+		5B75386D2B14639100819A58 /* Login,Signup,Fpassword */ = {
+			isa = PBXGroup;
+			children = (
+				5B05AFA82AEA1FBE00C646F0 /* ViewController.swift */,
+				5BFED1BA2AEAF794001816E9 /* ForgotViewController.swift */,
+				5B237E412AEABC1C00DF08CE /* loginViewController.swift */,
+			);
+			path = "Login,Signup,Fpassword";
+			sourceTree = "<group>";
+		};
+		5B75386E2B1463F800819A58 /* My profile */ = {
+			isa = PBXGroup;
+			children = (
+				5B72ADD82AEAE2E30022EFE4 /* DetailsViewController.swift */,
+			);
+			path = "My profile";
+			sourceTree = "<group>";
+		};
+		5B75386F2B14644A00819A58 /* Packages Tab */ = {
+			isa = PBXGroup;
+			children = (
+				5B12F0402AF041ED0098DECF /* ActivityTableViewCell.swift */,
+				5B12F03E2AF041ED0098DECF /* CustomCell.swift */,
+				5B12F03F2AF041ED0098DECF /* DetailsReviewViewController.swift */,
+				5B12F03B2AF041ED0098DECF /* FViewController.swift */,
+				5B12F03C2AF041ED0098DECF /* passViewController.swift */,
+				5B12F03D2AF041ED0098DECF /* PaymentDetails.swift */,
+				5B12F03A2AF041ED0098DECF /* PaymentSucessViewController.swift */,
+				5B12F0412AF041ED0098DECF /* SViewController.swift */,
+				5B12F0392AF041ED0098DECF /* TripPlanViewController.swift */,
+			);
+			path = "Packages Tab";
+			sourceTree = "<group>";
+		};
+		5E5C7CDA2B17E34000E5B086 /* Bot */ = {
+			isa = PBXGroup;
+			children = (
+				5EC541CB2B171215004AA034 /* BotResponse.swift */,
+				5B7538902B16B47A00819A58 /* ChatViewController.swift */,
+				5EC541C92B1711DD004AA034 /* ChatTestApp.swift */,
+				5EC541C72B171176004AA034 /* ContentView.swift */,
+			);
+			path = Bot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,11 +318,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B237E422AEABC1C00DF08CE /* loginViewController.swift in Sources */,
+				5B12F04A2AF041ED0098DECF /* SViewController.swift in Sources */,
+				5B12F0452AF041ED0098DECF /* passViewController.swift in Sources */,
+				5B12F0442AF041ED0098DECF /* FViewController.swift in Sources */,
 				5B05AFA92AEA1FBE00C646F0 /* ViewController.swift in Sources */,
+				5B12F0492AF041ED0098DECF /* ActivityTableViewCell.swift in Sources */,
 				5B05AFA52AEA1FBE00C646F0 /* AppDelegate.swift in Sources */,
 				5B05AFA72AEA1FBE00C646F0 /* SceneDelegate.swift in Sources */,
 				5B72ADD92AEAE2E30022EFE4 /* DetailsViewController.swift in Sources */,
+				5B12F0482AF041ED0098DECF /* DetailsReviewViewController.swift in Sources */,
+				5EC541C82B17117B004AA034 /* ContentView.swift in Sources */,
+				5B12F0722AF1AE670098DECF /* MyBookingsViewController.swift in Sources */,
+				5B7538912B16B47A00819A58 /* ChatViewController.swift in Sources */,
+				5B12F0462AF041ED0098DECF /* PaymentDetails.swift in Sources */,
+				5B12F0432AF041ED0098DECF /* PaymentSucessViewController.swift in Sources */,
+				5BE00BF22B1330290095210C /* BookingDetailsViewController.swift in Sources */,
+				5EC541CC2B171218004AA034 /* BotResponse.swift in Sources */,
 				5BFED1BB2AEAF794001816E9 /* ForgotViewController.swift in Sources */,
+				5B12F0472AF041ED0098DECF /* CustomCell.swift in Sources */,
+				5B12F0422AF041ED0098DECF /* TripPlanViewController.swift in Sources */,
+				5B12F0742AF1B0140098DECF /* BookingCells.swift in Sources */,
+				5EC541CA2B1711E0004AA034 /* ChatTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +490,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DV8246AS3N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Team2_App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -413,6 +518,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DV8246AS3N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Team2_App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
